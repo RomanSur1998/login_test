@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useFetch } from "../hooks/Fetch";
 import { UserActon } from "../Redux/UserAction";
+import google from "../assets/free-icon-google-symbol-2875404 1.svg";
 
 const Auth = () => {
   const fetch = useFetch();
@@ -43,7 +44,7 @@ const Auth = () => {
               name="username"
               type="text"
               required
-              className="appearance-none rounded-full relative block w-full px-3 py-2 border placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm bg-white text-black"
+              className="appearance-none rounded relative block w-full px-3 py-2 border placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm bg-white text-black"
               placeholder="Логин"
             />
           </div>
@@ -61,7 +62,7 @@ const Auth = () => {
               type="password"
               autoComplete="current-password"
               required
-              className="appearance-none rounded-full relative block w-full px-3 py-2 border 
+              className="appearance-none rounded relative block w-full px-3 py-2 border 
               placeholder-gray-500 text-gray-900 
               focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm bg-white text-black"
               placeholder="Пароль"
@@ -71,9 +72,10 @@ const Auth = () => {
           <div className="text-center">
             <button
               type="button"
-              className="mt-4 w-full inline-flex justify-center py-2 px-4 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-black bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="mt-4 w-full inline-flex justify-center  items-center py-2 px-4 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-black bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Войти через Google
+              Войти через Google{" "}
+              <img src={google} alt="google" className="w-4 h-4 ml-2" />
             </button>
           </div>
 
